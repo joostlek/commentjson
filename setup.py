@@ -21,7 +21,10 @@ for file_ in ('README',):
     with open(path('%s.rst' % file_)) as f:
         description += f.read() + '\n\n'
 
-classifiers = ["Programming Language :: Python"]
+classifiers = [
+    "Programming Language :: Python",
+    "License :: OSI Approved :: MIT License",
+]
 
 
 setup(name='commentjson',
